@@ -1,0 +1,282 @@
+/* --body-- start */
+body{
+	font-family: "Lato", sans-serif;
+	margin: 0;
+}
+
+/* --body-- end */
+
+
+/* --header-- end */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	z-index: 20;
+}
+
+header .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+
+}
+
+header .logo_container{
+	width: 100px;
+	margin-right: 20px;
+}
+
+header .logo_container .logo_img{
+	width: 100%;
+	height: 100%;
+}
+
+header nav{
+	margin-right: auto;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+header nav a {
+	text-decoration: none;
+	color: black;
+}
+
+/* --header-- end */
+
+/* ---main--- */
+main .about_us_title_section{
+	height: 300px;
+	background-image: url("../imgs/search_bar_background.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	color: white;
+	position: relative;
+}
+
+
+main .dark_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: black;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+main .container{
+	z-index: 1;
+}
+
+main a{
+	color: white;
+	text-decoration: none;
+}
+
+main .advert_section{
+	padding: 50px 0;
+}
+
+main .advert_section .advert_item, main .advert_section .advert_item .container{
+	display: flex;
+	align-items: center;
+	padding: 40px 0px;
+}
+main .advert_section .advert_title{
+	text-transform: capitalize;
+	font-size: 2em;
+}
+
+main .advert_section .advert_item:nth-child(1){
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+}
+
+main .advert_section .advert_item:nth-child(1) img{
+	text-align: center;
+	width: 80%;
+	height: 300px;
+	display: block;
+	border-radius: 10px;
+}
+
+main .advert_section .advert_item:nth-child(1) .text_area{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*main .advert_section .advert_item:nth-child(1) .text_area h4{
+	text-transform: uppercase;
+	color: #FFA500;
+}*/
+
+main .advert_section .advert_item:nth-child(2){
+	justify-content: space-between;
+	background-color: #F2F3F8;
+}
+
+main .banner{
+	height: 200px;
+	background-size: cover;
+	background-image: url("../imgs/banner3.jpg");
+	position: relative;
+}
+
+main .meet_team_avatar{
+	width: 200px;
+	height: 200px;
+	margin: 10px;
+	border: solid black 1px;
+}
+
+main .avatar_imgs{
+	disply: flex;
+	flex-direction: row;
+	gap: 10px;
+	border: solid blac
+}
+
+
+
+/* ---main--- */
+
+
+/* ---containers --- */
+.container{
+	width: 70%;
+	margin: auto;
+}
+
+/* ---containers --- */
+
+
+/* media queries */
+
+@media (max-width: 990px) {
+	.container{
+		width: 90%;
+	}
+
+	main .about_us_title_section{
+		height: 200px;
+	}
+
+	main .advert_section .advert_item, main .advert_section .advert_item .container{
+		flex-direction: column !important;
+	}
+
+	main.avatar_imgs{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+	}
+
+}
+
+/* media queries */
+
+
+/* ---colors --- */
+.bg_white{
+	background-color: white;
+}
+
+.txt_orange{
+	color:  #FFA500;
+}
+/* ---colors --- */
+
+/* ---buttons --- */
+.btn{
+	padding: 20px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.btn_orange{
+	color: #FFF;
+	background-color: #FFA500;
+}
+/* ---buttons --- */
+
+
+/* ---font sizes--- */
+.txt_xs{
+	font-size: 13px;
+}
+/* ---font sizes--- */
+
+
+/* ---layouts--- */
+.flex_col{
+	display: flex;
+	flex-direction: column;
+	justify-content: safe center;
+}
+
+.flex_col_align_start{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.flex_row_justify_between{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.flex_col_align_center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+
+.w_50{
+	max-width: 50%;
+}
+
+
+.w_400p{
+	max-width: 400px;
+}
+
+@media (max-width:  400px){
+	.w_xs_100per{
+		width: 100%;
+	}	
+}
+
+
+/* ---layouts---*/
+
+
+/* ---displays---*/
+.disp_b{
+	display: block;
+}
+/* ---displays---*/
+
+/* ---font-sizes--- */
+.txt_upper{
+	text-transform: uppercase;
+}
+/* ---font-sizes--- */
+
+
+
