@@ -18,6 +18,10 @@ main{
 }
 /*****main*****/
 
+.navbar-toggler:focus{
+	box-shadow: none;
+}
+
 .round-icon{
 	width: 75px;
 	height: 75px;
@@ -33,7 +37,7 @@ main{
 
 @media (min-width: 768px){
 	#navbar{
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		min-height: 100vh;
@@ -81,5 +85,10 @@ main{
 
 .bg-light-green{
 	background-color: #B9F796;
+}
+
+.bg-black{
+	background-color: #000;
+	color: white !important;
 }
 /*** colors ****/
