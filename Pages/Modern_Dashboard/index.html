@@ -1,0 +1,200 @@
+<!doctype html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<title>easyGo - Modern Dashboard</title>
+</head>
+<body>
+
+	<nav class="nav navbar pb-0 bg-white">
+	    <a class="navbar-brand text-primary" href="#">Concept</a>
+	    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+	    	<span class="navbar-toggler-icon"><i class="fa fa-bars navbar-text" aria-hidden="true"></i></span>
+	    </button>
+	    <div id="navbar" class="collapse navbar-collapse">
+			<ul class="navbar-nav bg-dark-violet">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Dashboard</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Trips</a>
+					<ul class="dropdown-menu bg-black">
+						<li><a href="#" class="dropdown-item">Create a Trip</a></li>
+						<li><a href="#" class="dropdown-item">View Trips</a></li>
+						<li><a href="#" class="dropdown-item">Bookings</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Financials</a>
+					<ul class="dropdown-menu bg-black">
+						<li><a href="#"class="dropdown-item">f-item</a></li>
+						<li><a href="#"class="dropdown-item">f-item</a></li>
+						<li><a href="#"class="dropdown-item">f-item</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Notifications</a>
+					<ul class="dropdown-menu bg-black">
+						<li><a class="dropdown-item" href="#">n-item</a></li>
+						<li><a class="dropdown-item" href="#">n-item</a></li>
+						<li><a class="dropdown-item" href="#">n-item</a></li>
+						<li><a class="dropdown-item" href="#">n-item</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="utils" class="d-flex align-items-center"> 
+			<form class="d-flex">
+		    	<input id="search" class="form-control me-2" type="text" placeholder="Search">
+			</form>
+			<small class="border-start p-2"><i class="fa-solid fa-bell"></i></small>
+			<small class="border-start p-2"><i class="fa-solid fa-grip"></i></small>
+			<small class="border-start p-2"><i class="fa-solid fa-ellipsis"></i></small>
+		</div>
+	</nav>
+
+
+	<main>
+
+			<!-- first row start-->
+			<div class="row mb-5">
+				<div class="p-3 col-lg-3 col-sm-6">
+					<div class="border d-flex p-3 border bg-white rounded-3 flex-column">
+						<small class="text-light-violet mb-3">Total Revenue</small>
+						<div class="d-flex justify-content-between align-items-center">
+							<h3>$1234</h3>
+							<small class="text-success">
+								12%
+							</small>
+						</div>
+						<div class="graph">Graph here</div>
+					</div>
+				</div>
+				<div class="p-3 col-lg-3 col-sm-6">
+					<div class="border d-flex p-3 border bg-white rounded-3 flex-column">
+						<small class="text-light-violet mb-3">Total Revenue</small>
+						<div class="d-flex justify-content-between align-items-center">
+							<h3>$1234</h3>
+							<small class="text-success">
+								12%
+							</small>
+						</div>
+						<div class="graph">Graph here</div>
+					</div>
+				</div>
+				<div class="p-3 col-lg-3 col-sm-6">
+					<div class="border d-flex p-3 border bg-white rounded-3 flex-column">
+						<small class="text-light-violet mb-3">Total Revenue</small>
+						<div class="d-flex justify-content-between align-items-center">
+							<h3>$1234</h3>
+							<small class="text-success">
+								12%
+							</small>
+						</div>
+						<div class="graph">Graph here</div>
+					</div>
+				</div>
+				<div class="p-3 col-lg-3 col-sm-6">
+					<div class="border d-flex p-3 border bg-white rounded-3 flex-column">
+						<small class="text-light-violet mb-3">Total Revenue</small>
+						<div class="d-flex justify-content-between align-items-center">
+							<h3>$1234</h3>
+							<small class="text-success">
+								12%
+							</small>
+						</div>
+						<div class="graph">Graph here</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- first row end-->
+
+
+			<!-- third row start -->
+			<div class="row">
+				<div class="col-lg-9 mb-2">
+					<div class="container bg-white p-3">
+						<h5>Recent Bookings</h5>
+						<table class="table table-hover text-muted">
+							<tr>
+								<th>#</th>
+								<th>Image</th>
+								<th>Product Name</th>
+								<th>Product Id</th>
+								<th>Quantity</th>
+								<th>Price</th>
+								<th>Order Time</th>
+								<th>Customer</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><img src="" alt="image"></td>
+								<td>Product #1</td>
+								<td>Id00002</td>
+								<td>3</td>
+								<td>$123.00</td>
+								<td>12:02:11</td>
+								<td>Patrick</td>
+								<td>Delivered</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><img src="" alt="image"></td>
+								<td>Product #1</td>
+								<td>Id00002</td>
+								<td>3</td>
+								<td>$123.00</td>
+								<td>12:02:11</td>
+								<td>Patrick</td>
+								<td>Delivered</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><img src="" alt="image"></td>
+								<td>Product #1</td>
+								<td>Id00002</td>
+								<td>3</td>
+								<td>$123.00</td>
+								<td>12:02:11</td>
+								<td>Patrick</td>
+								<td>Delivered</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td><img src="" alt="image"></td>
+								<td>Product #1</td>
+								<td>Id00002</td>
+								<td>3</td>
+								<td>$123.00</td>
+								<td>12:02:11</td>
+								<td>Patrick</td>
+								<td>Delivered</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="bg-white">
+						dlfj
+					</div>
+				</div>
+			</div>
+			<!-- third row end -->
+
+	</main>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

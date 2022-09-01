@@ -1,0 +1,99 @@
+body{
+	background-color: #F2F3F8;
+	font-family: "Roboto", sans-serif;
+}
+
+#navbar .navbar-nav a{
+	color: #474b7A;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 14px;
+
+}
+
+#navbar .navbar-nav a:hover{
+	color: white;
+}
+
+#navbar .navbar-nav .dropdown-menu{
+	background-color: #110C29;
+	padding: 20px 10px;
+}
+
+#search{
+	font-size: 11px;
+	outline: none;
+	box-shadow: none;
+}
+
+
+@media (min-width: 768px){
+	#navbar{
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 100vh;
+		display: block;
+		z-index: -1;
+		width: 200px;
+
+	}
+
+	#navbar .navbar-nav{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding-top: 50px;
+	}
+
+	main{
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 50px;
+		width: calc(100% - 200px);
+	}
+
+	div.show + #utils{
+		display: flex !important;
+	}
+}
+
+@media (max-width: 768px){
+	#utils{
+		display: none !important;
+	}
+}
+
+
+/** colors **/
+.bg-dark-violet{
+	background-color: #110C29;
+}
+
+.text-light-violet{
+	color: #4F4b7A;
+}
+
+/** colors **/
+
+
+/** hovers **/
+.hover-text-white{
+	transition: color 0.2s;
+}
+
+.hover-text-white:hover{
+	color: white;
+}
+
+.hover-bg-light-violet{
+	transition: color 0.2s;
+}
+
+.hover-bg-light-violet:hover{
+	background-color: #474b7A;
+}
+/** hovers **/
