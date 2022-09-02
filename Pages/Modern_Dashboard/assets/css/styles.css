@@ -97,3 +97,10 @@ body{
 	background-color: #474b7A;
 }
 /** hovers **/
+
+
+/** graph styles **/
+.graph{
+	overflow: auto;
+}
+/** graph styles **/
