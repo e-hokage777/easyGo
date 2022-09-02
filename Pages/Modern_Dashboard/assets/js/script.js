@@ -172,3 +172,57 @@ caq_svg.append("g")
 caq_svg.append("g")
 		.attr("transform", "translate(" + padding + ", 0)")
 		.call(yAxis)
+
+
+
+/*************** arc diagram **********************/
+arc_data = [1,3,4]
+arc_colors = ["#17BFDA", "#5B68F9", "#F4326A"]
+total_arc_data = arc_data.reduce((a,b) => a+b)
+full_turn = 2*Math.PI
+
+new_arc_data = arc_data.map((a) => a/total_arc_data * full_turn)
+
+let context = []
+
+cur = 0
+for (let ind in new_arc_data){
+    object = {
+        "startAngle": cur,
+        "endAngle": cur + new_arc_data[ind],
+        "color": arc_colors[ind]
+    }
+
+    context.push(object)
+
+    cur = cur + new_arc_data[ind]
+}
+
+
+const arcg_w = 200;
+const arcg_h = 300;
+const arc_cx = arcg_w/2
+const arc_cy = arcg_h/2
+
+
+arc_svg = d3.select("#arc_graph")
+			.append("svg")
+			.attr("width", arcg_w)
+			.attr("height", arcg_h)
+
+
+const arc = d3.arc()
+                .innerRadius(80)
+                .outerRadius(100)
+                .startAngle((d,i) => d.startAngle)
+                .endAngle((d,i) => d.endAngle)
+
+arc_svg.selectAll("path")
+    .data(context)
+    .enter()
+    .append("path")
+    .style("fill", (d,i) =>{
+        return d.color
+    })
+    .attr("d", arc)
+    .attr("transform", "translate(" + arc_cx + ", " + arc_cy + ")")
