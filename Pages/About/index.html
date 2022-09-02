@@ -6,7 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 		<title>easyGo - About</title>
 	</head>
@@ -14,7 +16,7 @@
 
 	<body>
 		<!-- --header-- start -->
-		<header class="bg_white">
+<!-- 		<header class="bg_white">
 			<div class="container">
 				<div class="logo_container">
 					<img class="logo_img" src="assets/imgs/small_long_logo.png">
@@ -26,10 +28,44 @@
 					<a href="#">Marketplace</a>
 					<a href="#">Blog</a>
 				</nav>
-				<div>another</div>
+				<a style="font-size: 33px" href="#"><i class="fa-regular fa-circle-user"></i></a>
 			</div>
-		</header>
+		</header> -->
 		<!-- --header-- end -->
+
+	<nav class="nav navbar navbar-expand-sm fixed-top bg-white border">
+		<div class="container">
+		    <a class="navbar-brand text-primary px-3" href="#">
+		    	<img src="assets/imgs/small_long_logo.png" width="100px" alt="Logo">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+		    	<span class="navbar-toggler-icon">
+		    		<i class="fa fa-bars navbar-text nav-open" aria-hidden="true"></i>
+		    		<i class="fa-solid fa-rectangle-xmark navbar-text nav-close"></i>
+		    	</span>
+		    </button>
+		    <div id="navbar" class="collapse navbar-collapse">
+				<ul class="navbar-nav ps-4">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Trips</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"href="#">Explore</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Marketplace</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#"><i class="fa-regular fa-circle-user fs-3 text-dark"></i></a>
+		</div>
+	</nav>
 
 		<!-- --main-- start -->
 		<main>
@@ -42,8 +78,8 @@
 					<h2>About Us</h2>
 					<div>
 						<a href="javascript:void(0)">Home</a>
-						->
-						<a href="javascript:void(0)">About</a>
+						<i class="fa-solid fa-arrow-right"></i>
+						<a href="javascript:void(0)" class="txt_orange">About</a>
 					</div>
 				</div>
 			</section>
@@ -85,7 +121,7 @@
 				<div class="advert_item container flex_col_align_center">
 					<h2>Milestones</h2>
 					<img class="disp_b w_50" src="assets/imgs/g1.jpg" style="min-width:300px">
-					<div class="w_50">
+					<div class="text-center w_50 pt-3">
 						<h5 class="txt_upper txt_orange">
 							Ashesi University
 						</h5>
@@ -127,12 +163,11 @@
 						</p>
 					</div>
 					<div class="user_contact">
-						<form>
+						<form action="javascript:void(0)">
 							<input type="text" placeholder="Your Name*">
 							<input type="email" placeholder="Your Email*">
 							<input type="text" placeholder="Subject*">
-							<textarea rows="9" placeholder="Type your message here*">
-							</textarea>
+							<textarea rows="9" placeholder="Type your message here*"></textarea>
 							<input class="btn_orange" type="submit" value="send message" style="margin-left:auto; border:none; border-radius: 5px">
 						</form>
 					</div>
@@ -177,20 +212,24 @@
 				</div>
 				<div class="new_letter">
 					<h3>Newsletter</h3>
-					<form>
-						<input type="text" name="newsletter">
-						<input type="submit" class="btn_orange" style="border:none;">
+					<form style="display:flex;" action="javascript:void(0)">
+						<input type="text" name="newsletter" class="rounded-0">
+						<input type="submit" class="btn_orange px-4 rounded-0" style="border:none;">
 					</form>
 				</div>
 			</div>
-			<hr style="width:70%; color: darkgray;">
+			<hr style="width:70%; color: darkgray;" class="m-auto my-3">
 			<div class="container" style="justify-content: space-between;">
-				<p>copyright</p>
-				<p>links</p>
+				<small class="text-muted">&copy; website adapted from 2020. All rights reserved</small>
+				<p>
+					<a href="#"><i class="fa-brands fa-instagram d-inline-block mx-1"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter d-inline-block mx-1"></i></a>
+				</p>
 			</div>
 		</footer>
 		<!-- --footer-- start -->
 
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</body>
 
 
