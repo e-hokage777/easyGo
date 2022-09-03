@@ -1,4 +1,4 @@
-// creating revenue grpah constants
+// creating revenue graph constants
 const rvg_w = 200;
 const rvg_h = 100;
 const xPadding = 10;
@@ -226,3 +226,47 @@ arc_svg.selectAll("path")
     })
     .attr("d", arc)
     .attr("transform", "translate(" + arc_cx + ", " + arc_cy + ")")
+
+
+
+
+/*********** barchart ***************/
+bar_data = [55, 32, 73, 40];
+bar_colors = ["#17BFDA", "#5B68F9", "#F4326A", "tomato"]
+const bar_w = "100%";
+const bar_h = 300;
+const bar_padding = 20;
+const rect_w = 30;
+
+bar_svg = d3.select("#barchart")
+			.append("svg")
+			.attr("width", bar_w)
+			.attr("height", bar_h)
+
+//creating scale
+bar_scale = d3.scaleLinear()
+bar_scale.domain([0, d3.max(bar_data)])
+bar_scale.range([0, bar_h - 2*bar_padding])
+
+bar_svg.selectAll("rect")
+		.data(bar_data)
+		.enter()
+		.append("rect")
+		.attr("x", (d,i) => i * (rect_w+bar_padding) + bar_padding*2)
+		.attr("y", (d) => bar_h - padding - bar_scale(d))
+		.attr("width", rect_w)
+		.attr("height", (d) => bar_scale(d))
+		.attr("fill", (d,i) => bar_colors[i])
+
+
+//adding the axes
+const bar_xAxis = d3.axisBottom()
+const bar_yAxis = d3.axisLeft(bar_scale)
+
+
+bar_svg.append("g")
+	.attr("transform", "translate(" + bar_padding + ",15)")
+	.call(bar_yAxis)
+
+
+/*********** barchart ***************/

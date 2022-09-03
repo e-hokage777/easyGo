@@ -104,3 +104,31 @@ body{
 	overflow: auto;
 }
 /** graph styles **/
+
+
+
+/** dropdown button **/
+.nav-link.dropdown-toggle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link.dropdown-toggle::after{
+	transform: rotate(-90deg);
+	transition: transform 0.2s;
+}
+
+.nav-link.dropdown-toggle.show::after{
+	transform: rotate(0deg);
+}
+/** dropdown button **/
+
+
+/** dropdown items **/
+.nav-item .dropdown-item:hover{
+	transition: all 0.3s;
+	color: white;
+	background-color: #4F4b7A;
+}
+/** dropdown items **/
