@@ -93,3 +93,45 @@ main{
 	color: white !important;
 }
 /*** colors ****/
+
+
+/** navlinks **/
+.nav-link{
+	font-size: 15px;
+}
+/** navlinks **/
+
+
+
+/** dropdown button **/
+}
+
+
+.nav-item.dropdown .nav-link.dropdown-toggle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.nav-link.dropdown-toggle::after{
+	transform: rotate(90deg);
+	transition: transform 0.2s;
+}
+
+.nav-link.dropdown-toggle.show::after{
+	transform: rotate(0deg);
+}
+/** dropdown button **/
+
+
+/** dropdown items **/
+.dropdown-menu .dropdown-item{
+	font-size: 14px;
+}
+
+.dropdown-menu .dropdown-item:hover{
+	color: black;
+}
+/** dropdown items **/
